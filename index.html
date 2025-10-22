@@ -1,186 +1,110 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduHub - Nền tảng Giáo dục Số</title>
-    <style>
-        /* Reset CSS */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --text-color: #333;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-        }
-
-        /* Header */
-        .header {
-            background-color: var(--primary-color);
-            padding: 1rem;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        .nav-menu {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .nav-menu a:hover {
-            color: var(--secondary-color);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                        url('https://source.unsplash.com/1600x900/?classroom') center/cover;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        /* Courses Grid */
-        .courses-container {
-            padding: 4rem 2rem;
-            background-color: #f9f9f9;
-        }
-
-        .courses-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .course-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .course-card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* News Section */
-        .news-section {
-            padding: 4rem 2rem;
-        }
-
-        .news-article {
-            border-bottom: 1px solid #eee;
-            padding: 1.5rem 0;
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-            }
-
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-
-            .courses-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💖 Kỷ niệm 3 tháng yêu nhau 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffb6c1, #ffc0cb, #ff99cc);
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      color: #fff;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+    .heart {
+      color: #ff3366;
+      font-size: 30px;
+      animation: heartbeat 1.2s infinite;
+    }
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 20px 25px;
+      border-radius: 15px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      max-width: 380px;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.9em;
+      color: rgba(255,255,255,0.85);
+    }
+    .confetti {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: white;
+      opacity: 0.8;
+      animation: fall 4s linear infinite;
+    }
+    @keyframes fall {
+      0% { transform: translateY(0) rotate(0); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+    }
+  </style>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">EduHub</div>
-        <nav class="nav-menu">
-            <a href="#home">Trang chủ</a>
-            <a href="#courses">Khóa học</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Liên hệ</a>
-            <a href="#login">Đăng nhập</a>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hệ thống Giáo dục Trực tuyến</h1>
-            <p>Kết nối tri thức - Kiến tạo tương lai</p>
-            <button class="cta-button">Bắt đầu ngay</button>
-        </div>
-    </section>
+  <h1>💞 90 days 💞</h1>
+  <h2>Anh & Em — 90 ngày ngọt ngào bên nhau 💐</h2>
 
-    <section class="courses-container">
-        <h2>Khóa học nổi bật</h2>
-        <div class="courses-grid">
-            <div class="course-card">
-                <img src="course-thumbnail.jpg" alt="Khóa học">
-                <div class="course-info">
-                    <h3>Lập trình cơ bản</h3>
-                    <p>Dành cho người mới bắt đầu</p>
-                </div>
-            </div>
-            <!-- Thêm các khóa học khác -->
-        </div>
-    </section>
+  <div class="card">
+    <p>
+      Hôm nay tròn <b>3 tháng</b> kể từ ngày đôi mình bắt đầu hành trình yêu thương này 💗<br><br>
+      Anh quyết định gửi cái này vào lúc 23h59p để tạo bất ngờ cho em cuối ngày hihi. Anh biết thời gian vừa qua
+      đôi mình có nhiều lúc không hiểu ý nhau. Chắc là do iu nhau nhiều quá nên là mới vậy.
+      Nhưng mà không sao những lúc như vậy chúng mình sẽ càng hiểu nhau hơn, khám phá ra nhiều khía cạnh từ đối phương.
+      Anh mong là chúng mình sẽ ngày một yêu nhau hơn và tình yêu này sẽ là mãi mãi. 
+      Cảm ơn em vì thời gian vừa qua luôn đồng hành cùng với anh, tha thứ cho những lỗi lầm anh mắc phải.
+      <br><br>
+      <b>Anh yêu em rất nhiều ❤️</b>
+    </p>
+  </div>
 
-    <section class="news-section">
-        <article class="news-article">
-            <div class="article-content">
-                <h3>Cập nhật phương pháp giảng dạy mới</h3>
-                <p>Áp dụng công nghệ AI trong giáo dục...</p>
-            </div>
-        </article>
-        <!-- Thêm bài viết khác -->
-    </section>
+  <div class="heart">❤️</div>
 
-    <section class="contact-section">
-        <h2>Liên hệ với chúng tôi</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Họ và tên">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Nội dung"></textarea>
-            <button type="submit">Gửi</button>
-        </form>
-    </section>
+  <footer>— Gửi đến em, người anh thương nhất —</footer>
 
-    <footer class="footer">
-        <p>© 2024 EduHub. All rights reserved.</p>
-    </footer>
+  <script>
+    // Hiệu ứng confetti nhẹ nhàng
+    const colors = ['#fff', '#ff99cc', '#ffccff', '#ffe6f2'];
+    for (let i = 0; i < 40; i++) {
+      const confetti = document.createElement("div");
+      confetti.classList.add("confetti");
+      confetti.style.left = Math.random() * 100 + "vw";
+      confetti.style.animationDuration = 3 + Math.random() * 3 + "s";
+      confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      confetti.style.opacity = 0.6 + Math.random() * 0.4;
+      document.body.appendChild(confetti);
+      setTimeout(() => confetti.remove(), 6000);
+    }
+  </script>
+
 </body>
 </html>
